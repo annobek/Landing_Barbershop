@@ -1,0 +1,151 @@
+/* Variables */
+:root {
+    --basic-black: #000;
+    --basic-white: #FFF;
+    --basic-neutral: #1A1A1A;
+    --basic-light: rgba(0, 0, 0, 0.50);
+    --button-hover: #663D15;
+}
+
+/* Global */
+.page-body {
+    margin: 0;
+    padding: 0;
+    min-width: 960px;
+    font-family: PT Sans Narrow;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--basic-white);
+    background-color: var(--basic-black);
+    background-image: url("../img/Background.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*чтоб картиник не вылезали за пределы своих род. элементов*/
+img {
+    max-width: 100%;   /*чтоб картиник не вылезали за пределы своих род. элементов*/
+    height: auto;   /*чтоб изменение размера было пропорционально*/
+}
+
+/* Main navigation */
+.main-navigation {
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--basic-white);
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation a, .user-navigation a {
+    color: var(--basic-white);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {   /* ховер - то, как выглядит сылка, когда на неё наведён курсор. фокус - при переходе табуляцией с клавы*/
+    background-color: var(--basic-neutral);
+}
+
+/*.site-navigation a:active { /*состояние ссылки, когда при клике удерживаешь мышь
+    color: aqua;
+}
+
+.site-navigation a:visited,
+.user-navigation a:visited {
+    color: green;
+}*/
+
+/* Features */
+.features-list {
+    list-style: none;
+}
+
+.features-item {
+    text-align: center;
+}
+
+.features-item h3 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+/*News block*/
+.block-content {
+    color: var(--basic-black);
+    background-color: #F9F6F3;
+    background-image: url("../img/content-background.png");
+    background-repeat: repeat;
+    background-position: 0 0;
+}
+
+.block-content h2 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.news-list {
+    list-style: none;
+}
+
+/*Button*/
+.button {
+    color: var(--basic-white);
+    background-color: var(--basic-black);
+    border: none;
+    text-align: center;  /*выравнивание текста по середине по горизонтали*/
+    vertical-align: middle;  /*по вертикали*/
+    font: inherit;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--button-hover);
+} 
+
+.contacts-phone {
+    color: inherit;
+}
+
+.appointment-form input {
+    border: 2px solid var(--basic-black);
+}
+
+.appointment-form input:hover {
+    border: 2px solid var(--button-hover);
+}
+
+.appointment-form input::placeholder {
+    color: var(--basic-light);
+}
+
+.main-footer {
+    background-color: var(--basic-neutral);
+    background-image: url("../img/footer-background.png");
+    background-repeat: repeat;
+    background-position: 0 0;
+}
+
+.footer-contacts a,
+.footer-contacts span {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.footer-social h2 {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.footer-list {
+    list-style: none;
+}
